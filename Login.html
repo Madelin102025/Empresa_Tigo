@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Login </title>
+<meta charset="UTF-8">
+<meta name="riewport" content="width= device-witch">
+</head>
+<body style="background-image: url(fondo\ tigo.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed">
+<center>
+<script>
+function usrpas(){
+if (document.X.txtusuario.value=="Madelin" &&
+document.X.txtpassword.value=="102025")
+{
+window.location="Formulario de Botones.html"
+}
+else {
+alert("Error en Usuario o Contrasena. Intenta de nuevo.")
+}
+}
+document.oncontextmenu=new Function("return false");
+</script>
+<pre>
+<image src="Tigo.png"><br>
+</pre>
+<h3>Bienvenido al Sistema de Tigo </h3>
+<image src="candado tigo.png">
+<form method="post" name="X">
+<input type="text"placeholder="Usuario"name="txtusuario"/><br>
+<input type="password"placeholder="Contrasena" name="txtpassword"/><br>
+<input type="button" value="Entrar" onclick="usrpas()">
+</center>
+</form>
+</body>
+</html>
